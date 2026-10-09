@@ -548,8 +548,8 @@ h3 {
   }
 
   .speaker-list figure {
-    width: 100%;
-    margin-top: 1.15rem;
+    width: min(100%, 220px);
+    margin-top: 0.85rem;
     padding: 0;
     border: none;
     background: transparent;
