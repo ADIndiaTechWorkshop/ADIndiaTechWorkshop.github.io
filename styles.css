@@ -67,6 +67,37 @@ a:hover {
   border-bottom: 1px solid var(--line);
 }
 
+.feedback-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.7rem 1.25rem;
+}
+
+.feedback-banner:hover {
+  color: white;
+}
+
+.feedback-cta {
+  display: inline-block;
+  background: var(--sky);
+  color: var(--navy);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-weight: 600;
+}
+
+.feedback-banner:hover .feedback-cta {
+  background: white;
+}
+
 .header-row,
 .footer-row {
   display: flex;
@@ -105,8 +136,9 @@ a:hover {
 #devs,
 #resources,
 #covered,
-#speakers {
-  scroll-margin-top: 5rem;
+#speakers,
+#feedback {
+  scroll-margin-top: 8rem;
 }
 
 .hero {
@@ -483,6 +515,47 @@ h3 {
   height: 148px;
 }
 
+.feedback {
+  padding: 0 0 4.5rem;
+}
+
+.feedback-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.6rem 1.5rem;
+}
+
+.feedback-card h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+
+.feedback-card p:not(.kicker) {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  max-width: 36rem;
+}
+
+.feedback-button {
+  flex: none;
+  display: inline-block;
+  background: var(--navy);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+}
+
+.feedback-button:hover {
+  background: var(--royal);
+  color: white;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -530,8 +603,14 @@ h3 {
   #devs,
   #resources,
   #covered,
-  #speakers {
-    scroll-margin-top: 9rem;
+  #speakers,
+  #feedback {
+    scroll-margin-top: 13rem;
+  }
+
+  .feedback-card {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .signup-grid,
