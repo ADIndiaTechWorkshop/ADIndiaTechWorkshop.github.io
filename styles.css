@@ -323,10 +323,26 @@ h3 {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 1.25rem 1.2rem 1.15rem;
 }
 
-.kind {
+.resource-grid li:hover {
+  border-color: var(--royal);
+}
+
+.resource-grid a {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.25rem 1.2rem 1.15rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.resource-grid a:hover {
+  color: inherit;
+}
+
+.resource-grid .kind {
   margin: 0 0 0.85rem;
   color: var(--royal);
   font-size: 0.95rem;
@@ -340,16 +356,20 @@ h3 {
   margin: 0;
 }
 
-.resource-grid li > p {
+.resource-grid li p {
   margin: 0.4rem 0 0;
   color: var(--muted);
 }
 
-.slot {
+.resource-grid .slot {
   margin-top: auto;
   padding-top: 1.15rem;
   color: var(--royal);
   font-weight: 500;
+}
+
+.resource-grid a:hover .slot {
+  text-decoration: underline;
 }
 
 .slot::before {
@@ -485,6 +505,33 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
     padding: 0.9rem 0;
+  }
+
+  .header-row {
+    container-type: inline-size;
+  }
+
+  .site-header nav {
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    width: 100%;
+  }
+
+  .site-header nav a {
+    white-space: nowrap;
+  }
+
+  @container (max-width: 24rem) {
+    .site-header nav a {
+      flex: 1 1 calc(50% - 0.5rem);
+    }
+  }
+
+  #devs,
+  #resources,
+  #covered,
+  #speakers {
+    scroll-margin-top: 9rem;
   }
 
   .signup-grid,

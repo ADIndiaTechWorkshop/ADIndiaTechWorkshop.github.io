@@ -4,4 +4,4 @@ Post-event page for the 10 October 2026 workshop at the AppDirect India office i
 
 Open `index.html` in a browser. There is no build step.
 
-The page includes a Devs.ai signup, placeholder slots for links and files, a recap of the afternoon, and speaker LinkedIn links with QR codes.
+The page includes a Devs.ai signup, workshop resources, a recap of the afternoon, and speaker LinkedIn links with QR codes.
